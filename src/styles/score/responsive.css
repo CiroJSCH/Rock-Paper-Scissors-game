@@ -1,0 +1,30 @@
+@media screen and (min-width: 1366px) {
+  .score {
+    width: 70%;
+  }
+
+  .score__title {
+    font-size: 1.8rem;
+  }
+
+  .score__points {
+    padding: 1rem 1.8rem;
+  }
+
+  .score__points p {
+    font-size: 1.1rem;
+  }
+
+  .score__points span {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .score {
+    width: 50%;
+  }
+  .score__points {
+    padding: 1.2rem 2rem;
+  }
+}

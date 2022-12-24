@@ -1,0 +1,39 @@
+.score {
+  width: 80%;
+  border: 3px solid var(--HeaderOutline);
+  border-radius: 7px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.score__title {
+  color: white;
+  width: 10%;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.score__points {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  padding: .8rem 1.5rem;
+  border-radius: 7px;
+}
+
+.score__points p {
+  font-size: .9rem;
+  color: var(--ScoreText);
+  font-weight: 700;
+}
+
+.score__points span {
+  font-size: 2.6rem;
+  color: var(--DarkText);
+  font-weight: 700;
+}
