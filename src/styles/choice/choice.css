@@ -1,0 +1,11 @@
+.choice {
+  width: 70%;
+  height: auto;
+  max-width: 25rem;
+  position: relative;
+  margin-top: 12rem;
+}
+
+.choice>img {
+  width: 100%;
+}

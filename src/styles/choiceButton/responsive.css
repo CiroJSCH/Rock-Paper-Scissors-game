@@ -1,0 +1,56 @@
+@media screen and (min-width:766px) {
+  .choiceButton {
+    width: 10rem;
+    height: 10rem;
+  }
+  
+  .choiceButton--inner {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  
+  #paper {
+    top: -4rem;
+    left: -3rem;
+  }
+  
+  #scissors {
+    top: -4rem;
+    right: -3rem;
+  }
+
+  #rock {
+    left: calc(50% - 5rem);
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .choiceButton {
+    width: 12rem;
+    height: 12rem;
+  }
+  
+  .choiceButton--inner {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .choiceButton--inner>img {
+    width: 40%;
+  }
+  
+  #paper {
+    top: -6rem;
+    left: -5rem;
+  }
+  
+  #scissors {
+    top: -6rem;
+    right: -5rem;
+  }
+  
+  #rock {
+    left: calc(50% - 6rem);
+  }
+  
+}

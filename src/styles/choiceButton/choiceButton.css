@@ -1,0 +1,46 @@
+.choiceButton {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.choiceButton:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.choiceButton--inner {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 7px 2px 0px #d8d8d8;
+}
+
+#paper {
+  top: -4rem;
+  left: -3rem;
+  background: var(--PaperGradient);
+  box-shadow: inset 0px -7px 2px 0px hsl(230, 58%, 44%);
+}
+
+#scissors {
+  top: -4rem;
+  right: -3rem;
+  background: var(--ScissorsGradient);
+  box-shadow: inset 0px -7px 2px 0px hsl(39, 88%, 40%);
+}
+
+#rock {
+  bottom: 0rem;
+  left: calc(50% - 4.5rem);
+  background: var(--RockGradient);
+  box-shadow: inset 0px -7px 2px 0px hsl(349, 69%, 42%);
+}
