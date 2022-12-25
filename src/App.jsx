@@ -14,6 +14,9 @@ const App = () => {
       <GameContextProvider>
         <Score />
         <Choice />
+        <button className="rulesButton">
+          RULES
+        </button>
       </GameContextProvider>
     </div>
   )
