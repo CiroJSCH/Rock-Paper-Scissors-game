@@ -1,6 +1,6 @@
 // Components
 import Score from "./components/Score";
-
+import Choice from "./components/Choice";
 // Context
 import GameContextProvider from "./context/GameContext";
 
@@ -13,6 +13,7 @@ const App = () => {
     <div className="App">
       <GameContextProvider>
         <Score />
+        <Choice />
       </GameContextProvider>
     </div>
   )
