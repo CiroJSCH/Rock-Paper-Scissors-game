@@ -1,10 +1,17 @@
 .result {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   height: auto;
   margin-top: 5rem;
   align-items: center;
-  gap: 3rem;
+  gap: 6rem;
+}
+
+.result > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
 }
 
 .result__choice {
@@ -15,6 +22,43 @@
   gap: 1.5rem;
 }
 
-.result__choice p{
+.result__choice p {
   letter-spacing: 2px;
+}
+
+.selecting {
+  width: 9rem;
+  height: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selecting__circle {
+  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+  animation-name: loading;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 9rem;
+    height: 9rem;
+    background: hsl(214, 72%, 11%);
+  }
+
+  50% {
+    width: 7rem;
+    height: 7rem;
+    background: hsl(214, 64%, 16%);
+  }
+
+  100% {
+    width: 9rem;
+    height: 9rem;
+    background: hsl(214, 72%, 11%);
+  }
 }
