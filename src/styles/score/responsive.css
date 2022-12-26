@@ -1,6 +1,14 @@
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 940px) {
   .score {
     width: 70%;
+  }
+
+}
+
+
+@media screen and (min-width: 1366px) {
+  .score {
+    width: 60%;
   }
 
   .score__title {

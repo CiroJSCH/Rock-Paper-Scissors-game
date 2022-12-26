@@ -1,0 +1,47 @@
+@media screen and (min-width: 766px) {
+  .resultButton {
+    width: 12rem;
+    height: 12rem;
+  }
+  
+  .resultButton--inner {
+    width: 9rem;
+    height: 9rem;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .resultButton {
+    width: 14rem;
+    height: 14rem;
+  }
+  
+  .resultButton--inner {
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .resultButton {
+    width: 18rem;
+    height: 18rem;
+  }
+  
+  .resultButton--inner {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .resultButton {
+    width: 19rem;
+    height: 19rem;
+  }
+  
+  .resultButton--inner {
+    width: 15rem;
+    height: 15rem;
+  }
+}

@@ -1,0 +1,25 @@
+@media screen and (min-width: 766px) {
+  .result {
+    gap: 5rem;
+  }
+  .result__choice p{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  .result {
+    width: 70%;
+    gap: 7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .result {
+    width: 50%;
+  }
+  .result__choice {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+}
