@@ -1,10 +1,28 @@
+// Libraries
+import { useContext } from 'react';
+
+// Context
+import { GameContext } from '../context/GameContext';
+
 // Styles
 import "../styles/choiceButton/choiceButton.css"
 import "../styles/choiceButton/responsive.css"
 
 const ChoiceButton = ({ image, choice }) => {
+
+  const { setHasChosen, setChoice, randomChoice } = useContext(GameContext)
+
+  const choseHandler = () => {
+    setHasChosen(true);
+    setChoice({
+      image,
+      choice,
+    });
+    randomChoice();
+  }
+
   return (
-    <div className="choiceButton" id={choice}>
+    <div className="choiceButton" id={choice} onClick={choseHandler}>
       <div className="choiceButton--inner">
         <img src={image} alt="option" />
       </div>
@@ -12,4 +30,4 @@ const ChoiceButton = ({ image, choice }) => {
   )
 }
 
-export default ChoiceButton
+export default ChoiceButton;
