@@ -1,0 +1,78 @@
+.win {
+  animation-name: winner;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes winner {
+  0% {
+    box-shadow: 0 0 0 10px rgba(59, 67, 99, 0.3),
+      0 0 0 30px rgba(59, 67, 99, 0.2), 0 0 0 50px rgba(59, 67, 99, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 0 30px rgba(59, 67, 99, 0.3),
+    0 0 0 60px rgba(59, 67, 99, 0.2), 0 0 0 90px rgba(59, 67, 99, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(59, 67, 99, 0.3),
+      0 0 0 30px rgba(59, 67, 99, 0.2), 0 0 0 50px rgba(59, 67, 99, 0.1);
+  }
+}
+
+
+@media screen and (min-width: 767px) {
+  @keyframes winner {
+    0% {
+      box-shadow: 0 0 0 10px rgba(59, 67, 99, 0.3),
+        0 0 0 30px rgba(59, 67, 99, 0.2), 0 0 0 50px rgba(59, 67, 99, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 0 40px rgba(59, 67, 99, 0.3),
+      0 0 0 80px rgba(59, 67, 99, 0.2), 0 0 0 120px rgba(59, 67, 99, 0.1);
+    }
+    100% {
+      box-shadow: 0 0 0 10px rgba(59, 67, 99, 0.3),
+        0 0 0 30px rgba(59, 67, 99, 0.2), 0 0 0 50px rgba(59, 67, 99, 0.1);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  @keyframes winner {
+    0% {
+      box-shadow: 0 0 0 10px rgba(59, 67, 99, 0.3),
+        0 0 0 30px rgba(59, 67, 99, 0.2), 0 0 0 50px rgba(59, 67, 99, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 0 50px rgba(59, 67, 99, 0.3),
+      0 0 0 100px rgba(59, 67, 99, 0.2), 0 0 0 150px rgba(59, 67, 99, 0.1);
+    }
+    100% {
+      box-shadow: 0 0 0 10px rgba(59, 67, 99, 0.3),
+        0 0 0 30px rgba(59, 67, 99, 0.2), 0 0 0 50px rgba(59, 67, 99, 0.1);
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .win {
+    box-shadow: 0 0 0 70px rgba(59, 67, 99, 0.3),
+      0 0 0 170px rgba(59, 67, 99, 0.2), 0 0 0 250px rgba(59, 67, 99, 0.1);
+  }
+
+  @keyframes winner {
+    0% {
+      box-shadow: 0 0 0 10px rgba(59, 67, 99, 0.3),
+        0 0 0 30px rgba(59, 67, 99, 0.2), 0 0 0 50px rgba(59, 67, 99, 0.1);
+    }
+    50% {
+      box-shadow: 0 0 0 70px rgba(59, 67, 99, 0.3),
+        0 0 0 170px rgba(59, 67, 99, 0.2), 0 0 0 250px rgba(59, 67, 99, 0.1);
+    }
+    100% {
+      box-shadow: 0 0 0 10px rgba(59, 67, 99, 0.3),
+        0 0 0 30px rgba(59, 67, 99, 0.2), 0 0 0 50px rgba(59, 67, 99, 0.1);
+    }
+  }
+}
