@@ -1,3 +1,9 @@
+// Libraries
+import { useContext } from 'react';
+
+// Context
+import { GameContext } from '../context/GameContext';
+
 // Components
 import ChoiceButton from "./ChoiceButton";
 
@@ -12,12 +18,13 @@ import "../styles/choice/choice.css";
 import "../styles/choice/responsive.css";
 
 const Choice = () => {
+
   return (
     <div className="choice">
     <img src={triangle} alt="Triangle background" />
-      <ChoiceButton image={paper} choice={"paper"}/>
-      <ChoiceButton image={scissors} choice={"scissors"}/>
-      <ChoiceButton image={rock} choice={"rock"}/>
+      <ChoiceButton image={paper} choice={"paper"} />
+      <ChoiceButton image={scissors} choice={"scissors"} />
+      <ChoiceButton image={rock} choice={"rock"} />
     </div>
   )
 }
