@@ -1,6 +1,6 @@
 // Components
 import Score from "./components/Score";
-import Choice from "./components/Choice";
+import Game from "./components/Game";
 // Context
 import GameContextProvider from "./context/GameContext";
 
@@ -13,7 +13,7 @@ const App = () => {
     <div className="App">
       <GameContextProvider>
         <Score />
-        <Choice />
+        <Game />
         <button className="rulesButton">
           RULES
         </button>
