@@ -1,0 +1,26 @@
+.again {
+  min-width: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.again p {
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.again button {
+  background-color: white;
+  border-radius: 7px;
+  border: none;
+  padding: 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  cursor: pointer;
+}
