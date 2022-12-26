@@ -19,6 +19,7 @@ const GameContextProvider = ({ children }) => {
   const [hasChosen, setHasChosen] = useState(false);
   const [pcChoice, setPcChoice] = useState({});
   const [score, setScore] = useState(0);
+  const [result, setResult] = useState("");
 
   const randomChoice = () => {
     const random = ['rock', 'paper', 'scissors'][Math.floor(Math.random() * 3)];
@@ -38,7 +39,9 @@ const GameContextProvider = ({ children }) => {
         randomChoice,
         pcChoice,
         score,
-        setScore
+        setScore,
+        result, 
+        setResult,
       }}
     >
       {children}
