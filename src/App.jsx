@@ -22,4 +22,9 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
+
+//* TODO: PLAY AGAIN COMPONENT
+//* TODO: ANIMACIONES
+// TODO: RULES MODAL
+// TODO: LOCAL STORAGE SCORE
