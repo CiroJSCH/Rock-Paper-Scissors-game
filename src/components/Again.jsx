@@ -9,14 +9,29 @@ import '../styles/again/again.css';
 import '../styles/again/responsive.css';
 
 const Again = () => {
-  const { result, setHasChosen } = useContext(GameContext);
+  const { result, setHasChosen, setResult } = useContext(GameContext);
 
   return (
     <div className='again'>
       <p>
-        {result === 'win' ? 'YOU WIN' : result === 'lose' ? 'YOU LOSE' : "IT'S A TIE"}
+        {result === 'win'
+          ? 'YOU WIN'
+          : result === 'lose'
+          ? 'YOU LOSE'
+          : "IT'S A TIE"}
       </p>
-      <button style={result === "lose" ? {"color": "red"} : { "color" : "var(--HeaderOutline)"}} onClick={() => setHasChosen(false)}>PLAY AGAIN</button>
+      <button
+        style={
+          result === 'lose'
+            ? { color: 'red' }
+            : { color: 'var(--HeaderOutline)' }
+        }
+        onClick={() => {
+          setHasChosen(false), setResult('');
+        }}
+      >
+        PLAY AGAIN
+      </button>
     </div>
   );
 };
