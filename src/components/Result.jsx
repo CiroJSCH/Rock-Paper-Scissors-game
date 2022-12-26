@@ -13,7 +13,7 @@ import '../styles/result/result.css';
 import '../styles/result/responsive.css';
 
 const Result = () => {
-  const { choice, pcChoice, setScore, score, setResult } = useContext(GameContext);
+  const { choice, pcChoice, setScore, score, setResult, result } = useContext(GameContext);
   const [loading, setLoading] = useState(true);
 
   const media = window.matchMedia('(min-width: 1200px)');
@@ -47,7 +47,7 @@ const Result = () => {
     <section className='result'>
       <div>
         <div className='result__choice'>
-          <ResultButton image={choice.image} choice={choice.choice} />
+          <ResultButton image={choice.image} choice={choice.choice} winner={result === "win"}/>
           <p>YOU PICKED</p>
         </div>
         {media.matches && (
@@ -61,7 +61,7 @@ const Result = () => {
               <span className='selecting__circle'></span>
             </div>
           ) : (
-            <ResultButton image={pcChoice.image} choice={pcChoice.choice} />
+            <ResultButton image={pcChoice.image} choice={pcChoice.choice} winner={result === "lose"}/>
           )}
           <p>THE HOUSE PICKED</p>
         </div>
