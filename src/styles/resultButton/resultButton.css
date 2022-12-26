@@ -22,17 +22,14 @@
   width: 40%;
 }
 
-#paper {
+.paper {
   background: var(--PaperGradient);
-  box-shadow: inset 0px -7px 2px 0px hsl(230, 58%, 44%);
 }
 
-#scissors {
+.scissors {
   background: var(--ScissorsGradient);
-  box-shadow: inset 0px -7px 2px 0px hsl(39, 88%, 40%);
 }
 
-#rock {
+.rock {
   background: var(--RockGradient);
-  box-shadow: inset 0px -7px 2px 0px hsl(349, 69%, 42%);
 }
