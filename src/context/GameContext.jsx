@@ -1,5 +1,5 @@
 // Libraries
-import { createContext, useState } from 'react';
+import { createContext, useState, useEffect } from 'react';
 
 // Images
 import rock from '../images/icon-rock.svg';
@@ -9,6 +9,12 @@ import scissors from '../images/icon-scissors.svg';
 export const GameContext = createContext(null);
 
 const GameContextProvider = ({ children }) => {
+
+  useEffect(() => {
+    const score = JSON.parse(localStorage.getItem("score")) ?? 0;
+    setScore(score);
+  }, [])
+  
   const images = {
     rock,
     paper,
