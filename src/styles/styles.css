@@ -41,7 +41,7 @@
   letter-spacing: 2px;
   padding: .5rem 2rem;
   position: absolute;
-  bottom: 5rem;
+  bottom: 1rem;
 }
 
 .rulesButton:hover {
@@ -51,8 +51,21 @@
 
 @media screen and (min-width: 1200px) {
   .rulesButton {
+    position: absolute;
     margin-top: 0;
     right: 3rem;
+    bottom: 3rem;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .rulesButton {
+    bottom: 2rem;
+  }
+}
+
+@media screen and (min-height: 850px) {
+  .rulesButton {
     bottom: 3rem;
   }
 }
